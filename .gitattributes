@@ -1,0 +1,30 @@
+# Normalize line endings everywhere.
+* text=auto eol=lf
+
+# Source files are always LF.
+*.ts text eol=lf
+*.tsx text eol=lf
+*.css text eol=lf
+*.html text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.mjs text eol=lf
+*.svg text eol=lf
+*.csv text eol=lf
+
+# Windows script
+*.bat text eol=crlf
+
+# Binary assets must never be line-ending normalised.
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.ico binary
+*.woff binary
+*.woff2 binary
+*.ttf binary
+*.wasm binary
