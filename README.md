@@ -82,15 +82,7 @@ sign up at `/signin`, and sessions are opaque tokens stored hashed in D1 with
 an httpOnly cookie. Passwords are PBKDF2-SHA256, never stored in plain text.
 New accounts are seeded with the starter decks only — no fabricated progress:
 a fresh account starts at 0% mastery, streak 0 and XP 0 across the deck list.
-Settings can restore or clear the sample decks.
-
-## Connect it to Freebuff
-
-1. `sites_create`, then `sites_add_storage` for D1 named `DB` and R2 named `FILES`.
-2. `sites_enable_auth` (pass `http://localhost:5173` as the local origin while
-   developing). Copy the development variables into `.dev.vars` (see
-   `.dev.vars.example`) to use real accounts locally.
-3. `bun run build`, then `sites_deploy` with `deploy.json`.
+Settings can rest
 
 ## Where things are
 
